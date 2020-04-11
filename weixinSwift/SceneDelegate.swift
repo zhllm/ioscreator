@@ -14,10 +14,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if let windowScene = scene as? UIWindowScene {
+            self.window = UIWindow(windowScene: windowScene)
+            let mainPage = MainTabBarController()
+            let navigator = UINavigationController(
+            rootViewController: mainPage)
+            // navigator.navigationBar.barStyle = UIBarStyle.black
+            navigator.navigationBar.barStyle = UIBarStyle.default
+            navigator.navigationBar.tintColor = UIColor.yellow
+            // translucent默认导航栏半透明，设置NO为不透明，显示颜色就是设定的颜色
+            // 设置返回按钮的图片
+            navigator.navigationBar.isTranslucent = false // 不透明
+            // 隐藏navigationBar
+            // navigator.isNavigationBarHidden = true
+            navigator.navigationBar.isHidden = false
+            // let appce = UINavigationBar.appearance()
+            // appce.backIndicatorImage = UIImage(named: "md")
+            self.window?.rootViewController = MainTabBarController()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

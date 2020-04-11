@@ -3,19 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259F056343C558601C3F995B /* Pods_weixinSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 683A4D443EA14FD58F00CB89 /* Pods_weixinSwift.framework */; };
+		2F0CCD8B2439A3400058B7F9 /* MKLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CCD8A2439A3400058B7F9 /* MKLayout.swift */; };
 		2F7F8095242CDFE6005F7789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8094242CDFE6005F7789 /* AppDelegate.swift */; };
 		2F7F8097242CDFE6005F7789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8096242CDFE6005F7789 /* SceneDelegate.swift */; };
 		2F7F8099242CDFE6005F7789 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8098242CDFE6005F7789 /* ViewController.swift */; };
 		2F7F809C242CDFE6005F7789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F809A242CDFE6005F7789 /* Main.storyboard */; };
 		2F7F809E242CDFE6005F7789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F809D242CDFE6005F7789 /* Assets.xcassets */; };
 		2F7F80A1242CDFE6005F7789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7F809F242CDFE6005F7789 /* LaunchScreen.storyboard */; };
+		2F7F80AA242CE8A6005F7789 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80A9242CE8A6005F7789 /* MainTabBarController.swift */; };
+		2F7F80B3242CE971005F7789 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80B2242CE971005F7789 /* MineViewController.swift */; };
+		2F7F80B5242CE97D005F7789 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80B4242CE97D005F7789 /* DiscoverViewController.swift */; };
+		2F7F80B7242CE989005F7789 /* ConnBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80B6242CE989005F7789 /* ConnBookViewController.swift */; };
+		2F7F80B9242CE996005F7789 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80B8242CE996005F7789 /* HomeViewController.swift */; };
+		2F7F80BC242E5997005F7789 /* WXTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80BB242E5997005F7789 /* WXTableViewCell.swift */; };
+		2F7F80C0242F73C2005F7789 /* WXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80BF242F73C2005F7789 /* WXNavigationController.swift */; };
+		2F7F80C524337262005F7789 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F80C424337262005F7789 /* ContentViewController.swift */; };
+		2FD17BDF2434DF5100A8F55B /* UCollectionViewSectionBackgroundLayoutDelegateLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD17BDE2434DF5100A8F55B /* UCollectionViewSectionBackgroundLayoutDelegateLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0141E08E5901767ED965431D /* Pods-weixinSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weixinSwift.debug.xcconfig"; path = "Target Support Files/Pods-weixinSwift/Pods-weixinSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		2416D4E9C286EBF62ACFF48A /* Pods-weixinSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weixinSwift.release.xcconfig"; path = "Target Support Files/Pods-weixinSwift/Pods-weixinSwift.release.xcconfig"; sourceTree = "<group>"; };
+		2F0CCD8A2439A3400058B7F9 /* MKLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKLayout.swift; sourceTree = "<group>"; };
 		2F7F8091242CDFE6005F7789 /* weixinSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weixinSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7F8094242CDFE6005F7789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7F8096242CDFE6005F7789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,16 @@
 		2F7F809D242CDFE6005F7789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F7F80A0242CDFE6005F7789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F7F80A2242CDFE6005F7789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F7F80A9242CE8A6005F7789 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2F7F80B2242CE971005F7789 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		2F7F80B4242CE97D005F7789 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		2F7F80B6242CE989005F7789 /* ConnBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnBookViewController.swift; sourceTree = "<group>"; };
+		2F7F80B8242CE996005F7789 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F7F80BB242E5997005F7789 /* WXTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WXTableViewCell.swift; sourceTree = "<group>"; };
+		2F7F80BF242F73C2005F7789 /* WXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WXNavigationController.swift; sourceTree = "<group>"; };
+		2F7F80C424337262005F7789 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		2FD17BDE2434DF5100A8F55B /* UCollectionViewSectionBackgroundLayoutDelegateLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayoutDelegateLayout.swift; sourceTree = "<group>"; };
+		683A4D443EA14FD58F00CB89 /* Pods_weixinSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weixinSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259F056343C558601C3F995B /* Pods_weixinSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08B6067CEBC803E1B8E3D119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				683A4D443EA14FD58F00CB89 /* Pods_weixinSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F0CCD892438BFD40058B7F9 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		2F7F8088242CDFE5005F7789 = {
 			isa = PBXGroup;
 			children = (
 				2F7F8093242CDFE6005F7789 /* weixinSwift */,
 				2F7F8092242CDFE6005F7789 /* Products */,
+				DFD6704CE36DA5C6D7413AF4 /* Pods */,
+				08B6067CEBC803E1B8E3D119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +98,13 @@
 		2F7F8093242CDFE6005F7789 /* weixinSwift */ = {
 			isa = PBXGroup;
 			children = (
+				2F0CCD892438BFD40058B7F9 /* extension */,
+				2FD17BDC2434DEC600A8F55B /* component */,
+				2F7F80BD242F7392005F7789 /* common */,
+				2F7F80AD242CE93A005F7789 /* Mine */,
+				2F7F80AC242CE933005F7789 /* Discover */,
+				2F7F80AB242CE926005F7789 /* ConnBook */,
+				2F7F80A8242CE866005F7789 /* Home */,
 				2F7F8094242CDFE6005F7789 /* AppDelegate.swift */,
 				2F7F8096242CDFE6005F7789 /* SceneDelegate.swift */,
 				2F7F8098242CDFE6005F7789 /* ViewController.swift */,
@@ -63,8 +112,125 @@
 				2F7F809D242CDFE6005F7789 /* Assets.xcassets */,
 				2F7F809F242CDFE6005F7789 /* LaunchScreen.storyboard */,
 				2F7F80A2242CDFE6005F7789 /* Info.plist */,
+				2F7F80A9242CE8A6005F7789 /* MainTabBarController.swift */,
 			);
 			path = weixinSwift;
+			sourceTree = "<group>";
+		};
+		2F7F80A8242CE866005F7789 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80AE242CE942005F7789 /* controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2F7F80AB242CE926005F7789 /* ConnBook */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80AF242CE949005F7789 /* contreoller */,
+			);
+			path = ConnBook;
+			sourceTree = "<group>";
+		};
+		2F7F80AC242CE933005F7789 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80B0242CE94F005F7789 /* controller */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2F7F80AD242CE93A005F7789 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80BA242E5976005F7789 /* views */,
+				2F7F80B1242CE955005F7789 /* controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		2F7F80AE242CE942005F7789 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80B8242CE996005F7789 /* HomeViewController.swift */,
+				2F0CCD8A2439A3400058B7F9 /* MKLayout.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2F7F80AF242CE949005F7789 /* contreoller */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80C424337262005F7789 /* ContentViewController.swift */,
+				2F7F80B6242CE989005F7789 /* ConnBookViewController.swift */,
+			);
+			path = contreoller;
+			sourceTree = "<group>";
+		};
+		2F7F80B0242CE94F005F7789 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80B4242CE97D005F7789 /* DiscoverViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2F7F80B1242CE955005F7789 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80B2242CE971005F7789 /* MineViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2F7F80BA242E5976005F7789 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80BB242E5997005F7789 /* WXTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2F7F80BD242F7392005F7789 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80BE242F739B005F7789 /* controller */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		2F7F80BE242F739B005F7789 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F7F80BF242F73C2005F7789 /* WXNavigationController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		2FD17BDC2434DEC600A8F55B /* component */ = {
+			isa = PBXGroup;
+			children = (
+				2FD17BDD2434DED200A8F55B /* CollectionViewLayout */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		2FD17BDD2434DED200A8F55B /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2FD17BDE2434DF5100A8F55B /* UCollectionViewSectionBackgroundLayoutDelegateLayout.swift */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		DFD6704CE36DA5C6D7413AF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0141E08E5901767ED965431D /* Pods-weixinSwift.debug.xcconfig */,
+				2416D4E9C286EBF62ACFF48A /* Pods-weixinSwift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F7F80A5242CDFE6005F7789 /* Build configuration list for PBXNativeTarget "weixinSwift" */;
 			buildPhases = (
+				9D9B850378D82D2BFD9A4A45 /* [CP] Check Pods Manifest.lock */,
 				2F7F808D242CDFE6005F7789 /* Sources */,
 				2F7F808E242CDFE6005F7789 /* Frameworks */,
 				2F7F808F242CDFE6005F7789 /* Resources */,
+				724E8D09B5E230536BBD3A38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +301,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		724E8D09B5E230536BBD3A38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weixinSwift/Pods-weixinSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weixinSwift/Pods-weixinSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weixinSwift/Pods-weixinSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9B850378D82D2BFD9A4A45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weixinSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F7F808D242CDFE6005F7789 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2F7F8099242CDFE6005F7789 /* ViewController.swift in Sources */,
+				2FD17BDF2434DF5100A8F55B /* UCollectionViewSectionBackgroundLayoutDelegateLayout.swift in Sources */,
 				2F7F8095242CDFE6005F7789 /* AppDelegate.swift in Sources */,
+				2F7F80C0242F73C2005F7789 /* WXNavigationController.swift in Sources */,
+				2F7F80AA242CE8A6005F7789 /* MainTabBarController.swift in Sources */,
+				2F7F80B9242CE996005F7789 /* HomeViewController.swift in Sources */,
+				2F0CCD8B2439A3400058B7F9 /* MKLayout.swift in Sources */,
+				2F7F80B5242CE97D005F7789 /* DiscoverViewController.swift in Sources */,
+				2F7F80B7242CE989005F7789 /* ConnBookViewController.swift in Sources */,
+				2F7F80BC242E5997005F7789 /* WXTableViewCell.swift in Sources */,
+				2F7F80C524337262005F7789 /* ContentViewController.swift in Sources */,
 				2F7F8097242CDFE6005F7789 /* SceneDelegate.swift in Sources */,
+				2F7F80B3242CE971005F7789 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +502,7 @@
 		};
 		2F7F80A6242CDFE6005F7789 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0141E08E5901767ED965431D /* Pods-weixinSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +521,7 @@
 		};
 		2F7F80A7242CDFE6005F7789 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2416D4E9C286EBF62ACFF48A /* Pods-weixinSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
