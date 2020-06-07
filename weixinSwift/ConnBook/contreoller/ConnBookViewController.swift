@@ -44,7 +44,7 @@ class ConnBookViewController: UIViewController {
         uView.backgroundColor = .yellow
         let image = UIImage(named: "md")
         self.imageView = UIImageView(image: image)
-        self.view.addSubview(self.imageView)
+        self.view.addSubview(self.imageView) 
         
         self.imageView.frame.origin.y = 120
 //        self.imageView.snp.makeConstraints { (make) in
