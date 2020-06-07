@@ -21,6 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let mainPage = MainTabBarController()
             let navigator = UINavigationController(
             rootViewController: mainPage)
+            
+            
             // navigator.navigationBar.barStyle = UIBarStyle.black
             navigator.navigationBar.barStyle = UIBarStyle.default
             navigator.navigationBar.tintColor = UIColor.yellow

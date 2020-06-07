@@ -11,6 +11,10 @@
 		2F0CCD8B2439A3400058B7F9 /* MKLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CCD8A2439A3400058B7F9 /* MKLayout.swift */; };
 		2F0CCDA12445F5670058B7F9 /* MKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CCDA02445F5670058B7F9 /* MKCollectionViewCell.swift */; };
 		2F0CCDA32445F7A30058B7F9 /* MKCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CCDA22445F7A30058B7F9 /* MKCollectionReusableView.swift */; };
+		2F681F78248CEEA6002FA688 /* DragViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F77248CEEA6002FA688 /* DragViewController.swift */; };
+		2F681F7A248CF021002FA688 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F79248CF021002FA688 /* ScaleViewController.swift */; };
+		2F681F7C248CFEC7002FA688 /* ThreeDimensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F7B248CFEC7002FA688 /* ThreeDimensionsViewController.swift */; };
+		2F681F7E248D1B3F002FA688 /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F7D248D1B3F002FA688 /* CharViewController.swift */; };
 		2F7F8095242CDFE6005F7789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8094242CDFE6005F7789 /* AppDelegate.swift */; };
 		2F7F8097242CDFE6005F7789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8096242CDFE6005F7789 /* SceneDelegate.swift */; };
 		2F7F8099242CDFE6005F7789 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8098242CDFE6005F7789 /* ViewController.swift */; };
@@ -35,6 +39,10 @@
 		2F0CCD8A2439A3400058B7F9 /* MKLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKLayout.swift; sourceTree = "<group>"; };
 		2F0CCDA02445F5670058B7F9 /* MKCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F0CCDA22445F7A30058B7F9 /* MKCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCollectionReusableView.swift; sourceTree = "<group>"; };
+		2F681F77248CEEA6002FA688 /* DragViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragViewController.swift; sourceTree = "<group>"; };
+		2F681F79248CF021002FA688 /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		2F681F7B248CFEC7002FA688 /* ThreeDimensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensionsViewController.swift; sourceTree = "<group>"; };
+		2F681F7D248D1B3F002FA688 /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		2F7F8091242CDFE6005F7789 /* weixinSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weixinSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7F8094242CDFE6005F7789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7F8096242CDFE6005F7789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +100,17 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		2F681F76248CEE73002FA688 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				2F681F77248CEEA6002FA688 /* DragViewController.swift */,
+				2F681F79248CF021002FA688 /* ScaleViewController.swift */,
+				2F681F7B248CFEC7002FA688 /* ThreeDimensionsViewController.swift */,
+				2F681F7D248D1B3F002FA688 /* CharViewController.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		2F7F8088242CDFE5005F7789 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +164,7 @@
 		2F7F80AB242CE926005F7789 /* ConnBook */ = {
 			isa = PBXGroup;
 			children = (
+				2F681F76248CEE73002FA688 /* components */,
 				2F7F80AF242CE949005F7789 /* contreoller */,
 			);
 			path = ConnBook;
@@ -377,18 +397,22 @@
 				2FD17BDF2434DF5100A8F55B /* UCollectionViewSectionBackgroundLayoutDelegateLayout.swift in Sources */,
 				2F7F8095242CDFE6005F7789 /* AppDelegate.swift in Sources */,
 				2F7F80C0242F73C2005F7789 /* WXNavigationController.swift in Sources */,
+				2F681F7E248D1B3F002FA688 /* CharViewController.swift in Sources */,
 				2F7F80AA242CE8A6005F7789 /* MainTabBarController.swift in Sources */,
 				2F7F80B9242CE996005F7789 /* HomeViewController.swift in Sources */,
 				2F0CCD8B2439A3400058B7F9 /* MKLayout.swift in Sources */,
 				2F7F80B5242CE97D005F7789 /* DiscoverViewController.swift in Sources */,
 				2F7F80B7242CE989005F7789 /* ConnBookViewController.swift in Sources */,
+				2F681F7A248CF021002FA688 /* ScaleViewController.swift in Sources */,
 				2F7F80BC242E5997005F7789 /* WXTableViewCell.swift in Sources */,
 				2F7F80C524337262005F7789 /* ContentViewController.swift in Sources */,
 				2FD326EA244DD4210072A256 /* XMSessionManager.swift in Sources */,
 				2F0CCDA32445F7A30058B7F9 /* MKCollectionReusableView.swift in Sources */,
 				2F7F8097242CDFE6005F7789 /* SceneDelegate.swift in Sources */,
 				2F0CCDA12445F5670058B7F9 /* MKCollectionViewCell.swift in Sources */,
+				2F681F7C248CFEC7002FA688 /* ThreeDimensionsViewController.swift in Sources */,
 				2F7F80B3242CE971005F7789 /* MineViewController.swift in Sources */,
+				2F681F78248CEEA6002FA688 /* DragViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
