@@ -2,6 +2,7 @@ platform :ios, '8.0'
 
 use_frameworks!
 inhibit_all_warnings!
+source 'https://github.com/CocoaPods/Specs.git'
 
 target 'weixinSwift' do
 
@@ -18,5 +19,7 @@ pod 'HMSegmentedControl'
 pod 'IQKeyboardManagerSwift'
 pod 'EmptyDataSet-Swift'
 pod 'UINavigation-SXFixSpace'
+pod 'SnapKit'
+pod "AFNetworking"
 
 end

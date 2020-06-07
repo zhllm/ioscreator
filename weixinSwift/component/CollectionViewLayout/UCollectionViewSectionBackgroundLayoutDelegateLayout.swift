@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let SectionBackground = "UCollectionReusableView"
-
 protocol  UCollectionViewSectionBackgroundLayoutDelegateLayout: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,

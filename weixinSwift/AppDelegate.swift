@@ -13,8 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
         return true
     }
+    
+//    static func uncaughtExceptionHandler(NSException *exception) {
+//
+//        NSLog(@"%@\n%@", exception, [exception callStackSymbols]);
+//
+//    }
 
     // MARK: UISceneSession Lifecycle
 

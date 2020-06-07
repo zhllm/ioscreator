@@ -7,92 +7,98 @@
 //
 
 import UIKit
-import SnapKit
-/**
- , UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource
- */
+import MapKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, MKMapViewDelegate {
     
-    var collectionView: UICollectionView!
-    func getWidthWithText(text: String, height: CGFloat, font: CGFloat) -> CGFloat{
-        var tt = text
-        var ft = font
-        var ht = height
-        if text == "" {
-            tt = "无"
-        }
-        
-        if font <= 0 {
-            ft = 13.0
-        }
-        if height < 0 {
-            ht = 0
-        }
-        
-        let sizes: CGRect = (tt as NSString).boundingRect(with: CGSize(width: CGFloat.infinity, height: ht), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: ft)], context: nil)
-        return sizes.size.width
-    }
-
+    var selectedAnnotion: MKAnnotation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("init")
-        /* collectionView = UICollectionView()
-        view.addSubview(collectionView)
-        collectionView.snp.makeConstraints({(make) in
-            make.edges.equalToSuperview()
-        })
-        collectionView.delegate = self
-        collectionView.dataSource = self */
+        let mapVIew = MKMapView(frame: self.view.bounds)
+        mapVIew.delegate = self
+        mapVIew.mapType = .standard
         
-        let width = getWidthWithText(text: "今日无效", height: 30.0, font: 13.0)
+        let cordinate2D = CLLocationCoordinate2D(latitude: 30.763701, longitude: 103.864558043276)
         
-        let parent = UIView()
-        parent.backgroundColor = UIColor.green
-        view.addSubview(parent)
+        let region = MKCoordinateRegion(center: cordinate2D, span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        mapVIew.setRegion(region, animated: true)
         
-        parent.snp.makeConstraints({(make) in
-            make.top.equalToSuperview().offset(50)
-            make.leading.equalToSuperview().offset(20)
-            make.right.equalToSuperview().offset(-20)
-            make.bottom.equalToSuperview().offset(-50)
-        })
+        let objectAnnotation = MKPointAnnotation()
+        objectAnnotation.coordinate = cordinate2D
+        objectAnnotation.title = "Imoerial Palace"
+        objectAnnotation.subtitle = "The world's five place"
+        mapVIew.addAnnotation(objectAnnotation)
         
-        let child1 = UIView()
-        let child2 = UIView()
-        child1.backgroundColor = .blue
-        parent.addSubview(child1)
-        parent.addSubview(child2)
-        child1.snp.makeConstraints({(make) in
-            make.top.equalToSuperview().offset(50)
-            make.leading.equalToSuperview().offset(20)
-            make.trailing.equalToSuperview().dividedBy(3).multipliedBy(5)
-            make.bottom.equalToSuperview().offset(-50)
-        })
-        let hsd = parent.frame.intersects(child1.frame)
-        child2.snp.makeConstraints({(make) in
-            make.top.equalToSuperview().offset(100)
-            make.leading.equalToSuperview().offset(100)
-            make.width.equalTo(100)
-            make.height.equalTo(100)
-        })
-        child2.backgroundColor = .red
-        print("\(hsd)")
+        self.view.addSubview(mapVIew)
         
-        let hsd2 = parent.frame.intersects(child2.frame)
-        print("\(hsd2)")
-    }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
     }
     
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        <#code#>
-//    }
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "MKAnnotation"
+        var annitationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+        if annitationView == nil {
+            annitationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+        }
+        
+        let button = UIButton(type: UIButton.ButtonType.infoDark)
+        button.addTarget(self, action: #selector(showInfo), for: UIControl.Event.touchUpInside)
+        annitationView?.leftCalloutAccessoryView = button
+        annitationView?.image = UIImage(named: "md")
+        
+        self.selectedAnnotion = annotation
+        annitationView?.canShowCallout = true
+        
+        return annitationView!
+    }
     
-//    func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes?{
-//
-//    }
+    @objc func showInfo(_ send:UIButton) {
+        let message = "This is a message toast"
+        
+        let alertView = UIAlertController(title: self.selectedAnnotion.title ?? "提示", message: message, preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertView.addAction(okAction)
+        self.present(alertView, animated: true, completion: nil)
+    }
+    
+    func mapView(_ mapView: MKMapView, didAdd views: [MKAnnotationView]) {
+        for view in views {
+            print(((view.annotation?.title)!)!)
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        print(view.annotation?.coordinate ?? "normal")
+        print(view.annotation?.title! ?? "normal")
+        print(view.annotation?.subtitle! ?? "normal")
+    }
+    
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        print("regionDidChangeAnimated")
+    }
+    
+    func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool){
+        print("regionWillChangeAnimated")
+    }
+    
+    func mapViewWillStartLoadingMap(_ mapView: MKMapView) {
+        print("mapViewWillStartLoadingMap")
+    }
+    
+    func mapViewWillStartRenderingMap(_ mapView: MKMapView) {
+        print("mapViewWillStartRenderingMap")
+    }
+    
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+        print("mapViewDidFinishLoadingMap")
+    }
+    
+    func mapViewDidFinishRenderingMap(_ mapView: MKMapView, fullyRendered: Bool) {
+        print("mapViewDidFinishRenderingMap")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
     
 }

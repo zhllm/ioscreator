@@ -17,7 +17,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let home = HomeViewController()
         home.tabBarItem = UITabBarItem(title: "微信", image: UIImage(named: "md"), selectedImage: nil)
         home.view.backgroundColor = UIColor.white
@@ -50,18 +50,18 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         
         self.setViewControllers([
+            UINavigationController(rootViewController: connbook),
             UINavigationController(rootViewController: home),
             UINavigationController(rootViewController: mine),
             UINavigationController(rootViewController: discover),
-            UINavigationController(rootViewController: connbook),
         ], animated: true)
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController){
+        print(viewController)
+        
         if viewController.isEqual(self.mine) {
-            if let ct = viewController as? MineViewController {
-                ct.setupNavigationBar()
-            }
+           
         } else if viewController.isEqual(self.home){
             self.navigationItem.title = "花有重开日"
         } else if viewController.isEqual(self.discover){

@@ -9,50 +9,37 @@
 import UIKit
 
 class WXTableViewCell: UITableViewCell {
-    var iconImageView: UIImageView?
-    var titleLabel: UILabel?
-    var noteLabel: UILabel?
-    var timeLabel: UILabel?
-    var numberLabel: UILabel?
+    var thumbnail: UIImageView!
+    var title: UILabel!
+    var detail: UIButton!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.selectionStyle = .none
+        // self.selectionStyle = .none
+        self.thumbnail = UIImageView(image: UIImage(named: "md"))
+        self.thumbnail.frame = CGRect(x: 20, y: 10, width: 24, height: 24)
         
-        self.iconImageView = UIImageView(frame: CGRect(x: 16, y: 8, width: 48, height: 48))
-        self.iconImageView?.image = UIImage(named: "md")
-        self.contentView.addSubview(iconImageView!)
-        
-        self.selectionStyle = .none
-        
-        self.titleLabel = UILabel(frame: CGRect(x: 72, y: 8, width: 240, height: 21))
-        self.titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
-        self.titleLabel?.text = "hellohfsdhfksdjfkdsf"
-        self.contentView.addSubview(titleLabel!)
-        
-        self.noteLabel = UILabel(frame: CGRect(x: 72, y: 32, width: 240, height: 21))
-        self.noteLabel?.font = UIFont.systemFont(ofSize: 15.0)
-        self.noteLabel?.textColor = UIColor.lightGray
-        self.noteLabel?.text = "world!!!hellohfsdhfksdjfkdsfhellohfsdhfksdjfkdsf"
-        self.contentView.addSubview(noteLabel!)
-        
-        self.timeLabel = UILabel(frame: CGRect(x: 326, y: 8, width: 42, height: 21))
-        self.timeLabel?.font = UIFont.systemFont(ofSize: 12.0)
-        self.timeLabel?.textColor = UIColor.lightGray
-        self.timeLabel?.text = "8:24"
-        self.numberLabel?.textAlignment = .right
-        self.contentView.addSubview(timeLabel!)
+        self.title = UILabel(frame: CGRect(x: 80, y: 0, width: 120, height: 44))
+        self.title.text = ""
+        self.title.font = UIFont(name: "Arial", size: 15)
         
         
-        self.numberLabel = UILabel(frame: CGRect(x: 337, y: 32, width: 21.0, height: 21))
-        self.numberLabel?.font = UIFont.systemFont(ofSize: 15.0)
-        self.numberLabel?.textColor = UIColor.lightGray
-        self.numberLabel?.text = "3"
-        self.numberLabel?.layer.cornerRadius = 10
-        self.numberLabel?.backgroundColor = UIColor.red
-        self.numberLabel?.clipsToBounds = true
-        self.numberLabel?.textAlignment = .center
-        self.contentView.addSubview(numberLabel!)
+        self.detail = UIButton(frame: CGRect(x: 240, y: 12, width: 60, height: 20))
+        self.detail.setTitle("Detail", for: .normal)
+        self.detail.titleLabel?.font = UIFont(name: "Arial", size: 13)
+        
+        self.detail.backgroundColor = .orange
+        self.detail.layer.cornerRadius = 10
+        self.detail.addTarget(self, action: #selector(showDetail), for: UIControl.Event.touchUpInside)
+        
+        self.addSubview(thumbnail)
+        self.addSubview(title)
+        self.addSubview(detail)
+        
+    }
+    
+    
+    @objc func showDetail(_ sender: UIButton){
         
     }
     
