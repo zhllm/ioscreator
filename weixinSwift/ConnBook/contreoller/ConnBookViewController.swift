@@ -12,8 +12,9 @@ import SnapKit
 class ConnBookViewController: UIViewController {
   
     override func viewDidLoad() {
-        // DragViewController() ScaleViewController ThreeDimensionsViewController
-        let childContent = CharViewController()
+        // DragViewController() ScaleViewController
+        // ThreeDimensionsViewController CharViewController
+        let childContent = LineViewController()
         self.view.addSubview(childContent.view)
         self.addChild(childContent)
     }

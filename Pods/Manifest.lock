@@ -15,6 +15,9 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - Alamofire (4.9.1)
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
   - EmptyDataSet-Swift (5.0.0)
   - HandyJSON (5.0.1)
   - HMSegmentedControl (1.5.5)
@@ -43,6 +46,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Charts
   - EmptyDataSet-Swift
   - HandyJSON
   - HMSegmentedControl
@@ -62,6 +66,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Alamofire
+    - Charts
     - EmptyDataSet-Swift
     - HandyJSON
     - HMSegmentedControl
@@ -81,6 +86,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
   EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
   HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
@@ -97,6 +103,6 @@ SPEC CHECKSUMS:
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
   UINavigation-SXFixSpace: 10f223253ebff2ceefa26694e23b7694269763c4
 
-PODFILE CHECKSUM: e9e3ea117cdf51b2ebf9aada5a4baf2d66704f72
+PODFILE CHECKSUM: 9da98707283ed690853a749cc6dc68819205066d
 
 COCOAPODS: 1.9.1

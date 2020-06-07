@@ -15,6 +15,7 @@
 		2F681F7A248CF021002FA688 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F79248CF021002FA688 /* ScaleViewController.swift */; };
 		2F681F7C248CFEC7002FA688 /* ThreeDimensionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F7B248CFEC7002FA688 /* ThreeDimensionsViewController.swift */; };
 		2F681F7E248D1B3F002FA688 /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F7D248D1B3F002FA688 /* CharViewController.swift */; };
+		2F681F80248D2595002FA688 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F681F7F248D2595002FA688 /* LineViewController.swift */; };
 		2F7F8095242CDFE6005F7789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8094242CDFE6005F7789 /* AppDelegate.swift */; };
 		2F7F8097242CDFE6005F7789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8096242CDFE6005F7789 /* SceneDelegate.swift */; };
 		2F7F8099242CDFE6005F7789 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7F8098242CDFE6005F7789 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		2F681F79248CF021002FA688 /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
 		2F681F7B248CFEC7002FA688 /* ThreeDimensionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensionsViewController.swift; sourceTree = "<group>"; };
 		2F681F7D248D1B3F002FA688 /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
+		2F681F7F248D2595002FA688 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		2F7F8091242CDFE6005F7789 /* weixinSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weixinSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7F8094242CDFE6005F7789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7F8096242CDFE6005F7789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				2F681F79248CF021002FA688 /* ScaleViewController.swift */,
 				2F681F7B248CFEC7002FA688 /* ThreeDimensionsViewController.swift */,
 				2F681F7D248D1B3F002FA688 /* CharViewController.swift */,
+				2F681F7F248D2595002FA688 /* LineViewController.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				2F7F8095242CDFE6005F7789 /* AppDelegate.swift in Sources */,
 				2F7F80C0242F73C2005F7789 /* WXNavigationController.swift in Sources */,
 				2F681F7E248D1B3F002FA688 /* CharViewController.swift in Sources */,
+				2F681F80248D2595002FA688 /* LineViewController.swift in Sources */,
 				2F7F80AA242CE8A6005F7789 /* MainTabBarController.swift in Sources */,
 				2F7F80B9242CE996005F7789 /* HomeViewController.swift in Sources */,
 				2F0CCD8B2439A3400058B7F9 /* MKLayout.swift in Sources */,
